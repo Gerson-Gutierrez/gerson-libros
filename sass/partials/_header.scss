@@ -1,0 +1,44 @@
+header {
+    background-color: #537895;
+background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+height: 150px;
+
+}
+
+.navbar {
+    height: 150px;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.menu {
+    justify-content: space-between;
+}
+
+
+
+.menu__link {
+    font-size: 2em;
+    padding: 1.5rem;
+    position: relative;
+}
+
+
+.nav{
+    height: 500px;
+    width: 100%;
+    background-color: #0078D4;
+
+}
+
+.flex-row {
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
