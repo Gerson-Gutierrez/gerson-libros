@@ -2,7 +2,8 @@
 //--------------
 const allLibros = [volumen1, volumen2, volumen3, volumen4]
 
-let Carrito = []
+let Carrito = JSON.parse(localStorage.getItem('Carrito')) || []
+
 
 // Query de elementos
 //-------------------
@@ -82,16 +83,9 @@ const renderizarCarrito = () => {
 const agregarLibroaCarrito = (e) => {
     const libroIdSelected = e.target.getAttribute('data-id')
     const libroSelected = allLibros.find((libros) => libros.id == libroIdSelected )
-    if(Carrito.length < 5){
-        Carrito.push(libroSelected)
-
-    }
+    Carrito.length < 5 && Carrito.push(libroSelected) 
     localStorage.setItem('Carrito', JSON.stringify(Carrito))
     renderizarCarrito()
-
-    
-    
-    
 
 }
 
