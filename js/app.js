@@ -113,3 +113,13 @@ cardCTA.addEventListener('click', agregarLibroaCarrito)
 //------------
 
 renderizarListaLibros()
+
+
+
+document.querySelector('#BotonComprar').addEventListener('click',() => {
+    Swal.fire(
+        'Compra Exitosa',
+        'Gracias por su compra,vuelva pronto!',
+        'success'
+      )
+})
