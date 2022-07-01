@@ -112,7 +112,7 @@ cardCTA.addEventListener('click', agregarLibroaCarrito)
 // Ejecuciones 
 //------------
 
-renderizarListaLibros()
+// renderizarListaLibros()
 
 
 
@@ -123,3 +123,8 @@ document.querySelector('#BotonComprar').addEventListener('click',() => {
         'success'
       )
 })
+
+// Traer los libros desde Json
+fetch('../data/book.json') 
+      .then((res) => res.json())
+      .then((jsonResponse) => renderizarListaLibros(jsonResponse.data))
